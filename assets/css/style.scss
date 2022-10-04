@@ -1,3 +1,6 @@
+$primary-color: #73931F;
+$secondary-color: #060606;
+
 body {
     font-size: 18px;
 }
@@ -201,6 +204,14 @@ nav.navbar {
 }
 .offcanvas {
     overflow: hidden;
+    background: $primary-color;
+    background-color: #4f6616;
+    background: linear-gradient(45deg, black, transparent);
+    backdrop-filter: blur(4px);
+    color: #fff;
+    .offcanvas-header .btn-close {
+        color: white;
+    }
     .offcanvas-body .menu-sidebar {
         list-style: none;
         padding: 0;
@@ -221,9 +232,11 @@ nav.navbar {
                 transition: all .25s ease-out;
             }
             a.nav-link.active, a.nav-link:hover {
+                color: $primary-color;
                 .line-divide {
                     width: 40%;
                     left: 20px;
+                    background: $primary-color;
                 }
             }
         }
@@ -258,6 +271,7 @@ nav.navbar {
         }
     }
     .offcanvas-footer {
+        padding: .5rem 0;
         .sidebar-links {
             width: 65%;
             a {
@@ -270,10 +284,11 @@ nav.navbar {
                 justify-content: center;
                 text-decoration: none;
                 color: #060606;
+                color: $primary-color;
                 transition: all .5s linear;
             }
             a:hover {
-                background: #0707a4;
+                background: $primary-color;
                 color: whitesmoke;
             }
         }
@@ -289,6 +304,15 @@ nav.navbar {
     background: #73931F;
     border-color: #73931F;
     color: #fafafa;
+}
+.btn-no-bx-shadow {
+    box-shadow: none;
+    backdrop-filter: none !important;
+}
+.btn-no-bx-shadow:hover, .btn-no-bx-shadow:focus {
+    box-shadow: none;
+    backdrop-filter: none !important;
+    color: #4f6616 !important;
 }
 .btn-primary:hover, .btn-primary:focus {
     background-color: #4f6616 !important;

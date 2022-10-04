@@ -208,6 +208,15 @@ nav.navbar li:hover {
 
 .offcanvas {
   overflow: hidden;
+  background: #73931F;
+  background-color: #4f6616;
+  background: linear-gradient(45deg, black, transparent);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  color: #fff;
+}
+.offcanvas .offcanvas-header .btn-close {
+  color: white;
 }
 .offcanvas .offcanvas-body .menu-sidebar {
   list-style: none;
@@ -230,9 +239,13 @@ nav.navbar li:hover {
   border-radius: 50px;
   transition: all 0.25s ease-out;
 }
+.offcanvas .offcanvas-body .menu-sidebar li a.nav-link.active, .offcanvas .offcanvas-body .menu-sidebar li a.nav-link:hover {
+  color: #73931F;
+}
 .offcanvas .offcanvas-body .menu-sidebar li a.nav-link.active .line-divide, .offcanvas .offcanvas-body .menu-sidebar li a.nav-link:hover .line-divide {
   width: 40%;
   left: 20px;
+  background: #73931F;
 }
 .offcanvas .offcanvas-body .menu-sidebar .dropdown-menu, .offcanvas .offcanvas-body .menu-sidebar .collapse .cs-menu {
   list-style: none;
@@ -261,6 +274,9 @@ nav.navbar li:hover {
   top: 40%;
   width: 800px;
 }
+.offcanvas .offcanvas-footer {
+  padding: 0.5rem 0;
+}
 .offcanvas .offcanvas-footer .sidebar-links {
   width: 65%;
 }
@@ -274,10 +290,11 @@ nav.navbar li:hover {
   justify-content: center;
   text-decoration: none;
   color: #060606;
+  color: #73931F;
   transition: all 0.5s linear;
 }
 .offcanvas .offcanvas-footer .sidebar-links a:hover {
-  background: #0707a4;
+  background: #73931F;
   color: whitesmoke;
 }
 
@@ -292,6 +309,19 @@ nav.navbar li:hover {
   background: #73931F;
   border-color: #73931F;
   color: #fafafa;
+}
+
+.btn-no-bx-shadow {
+  box-shadow: none;
+  -webkit-backdrop-filter: none !important;
+          backdrop-filter: none !important;
+}
+
+.btn-no-bx-shadow:hover, .btn-no-bx-shadow:focus {
+  box-shadow: none;
+  -webkit-backdrop-filter: none !important;
+          backdrop-filter: none !important;
+  color: #4f6616 !important;
 }
 
 .btn-primary:hover, .btn-primary:focus {
