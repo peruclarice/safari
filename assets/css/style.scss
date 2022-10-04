@@ -1,3 +1,22 @@
+body {
+    font-size: 18px;
+}
+h1 {
+    font-size: 3rem;
+}
+p {
+    font-size: 1rem;
+}
+.hero-section {
+    color: white;
+    max-width: 540px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 5;
+    h1, p {
+        color: inherit;
+    }
+}
 .flx {
     display: flex;
 }
@@ -38,6 +57,7 @@ img {
 }
 section {
     min-height: 100vh;
+    position: relative;
 }
 .bg-vh {
     background-size: cover;
@@ -45,9 +65,19 @@ section {
     width: 100%;
     height: 100%;
     background-position: center;
+    position: relative;
 }
 .bg-1 {
     background-image: url(/assets/img/ron-dauphin-k-8-eX4Y3no-unsplash.jpg);
+}
+.bg-vh::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(5deg, rgb(0,0,0,.45) 5%, transparent);
 }
 .nav-header {
     position: fixed;
@@ -248,4 +278,30 @@ nav.navbar {
             }
         }
     }
+}
+.btn {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding:.5rem 1.5rem;
+    min-width: 160px;
+    margin: 0 10px;
+}
+.btn-primary {
+    background: #73931F;
+    border-color: #73931F;
+    color: #fafafa;
+}
+.btn-primary:hover, .btn-primary:focus {
+    background-color: #4f6616 !important;
+    border-color: #4f6616 !important;
+}
+.btn-secondary {
+    background: rgb(255,255,255,.45);
+    border-color: #73931F;
+    color: #060606;
+    backdrop-filter: blur(4px);
+}
+.btn-secondary:hover, .btn-secondary:focus {
+    background-color: rgb(255,255,255) !important;
+    border-color: #4f6616 !important;
+    color: #060606 !important;
 }
