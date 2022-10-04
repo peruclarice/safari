@@ -5,8 +5,138 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <!-- Bootstrap 3 CSS (https://getbootstrap.com/docs/3.3/) -->
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/img/elephant-logo.png" type="image/x-icon">
+    <link rel="icon" href="./assets/img/elephant-logo.png" type="image/x-icon">
+
+    <!-- Fontawesome icons -->
+    <script src="https://kit.fontawesome.com/686a2e2af8.js" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
 </head>
 <body>
-    
+    <header class="nav-header">
+        <nav class="navbar py-2 px-5">
+            <a href="/home.html" class="navbar-brand img-logo">
+                <img src="./assets/img/elephant-logo.png" alt="safari-logo">
+                <!-- <object data="./assets/images/svg/peru_logo.svg" type="" style="width: 120px;"></object> -->
+            </a>
+            <div class="menu-center">
+                <ul class="menu">
+                    <li><a class="nav-link active" href="./home.html">Home<span class="line-divide"></span></a></li>
+                    <li><a class="nav-link" href="./about_me.html"  title="Learn more about me">About me<span class="line-divide"></span></a></li>
+                    <li><a class="nav-link" href="./my_projects.html"  title="See my projects">Case Studies<span class="line-divide"></span></a></li>
+                    <li><a class="nav-link" href="./my_skills.html"  title="contact me">My Skills<span class="line-divide"></span></a></li>
+                    <li><a class="nav-link" href="./my_cv.html"  title="contact me">My Resume &#128203;<span class="line-divide"></span></a></li>
+                    <!-- <li><a class="nav-link" href="./contact.html"  title="contact me">Reach out to me<span class="line-divide"></span></a></li> -->
+                    <!-- <div> &#128100;  &#128452; &#128206; &#128203; &#128231;</div> -->
+                </ul>
+            </div>
+            <div class="menu-right">
+                <a href="mailto:clarice.kibii@meltwater.org" class="btn btn-primary">Reach out to Me <i>&#128231;</i></a>
+            </div>
+            <div class="hamburger-menu">
+                <a class="btn btn-secondary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample" style="    background: transparent;
+                border: 0;
+                color: #060606;">
+                    <span class="fas fa-bars" style="font-size: 1.5rem;"></span>
+                  </a>
+                  <!-- <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                    Button with data-bs-target
+                  </button> -->
+                    <!-- <a class="btn btn-secondary" data-toggle="collapse" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        <span class="fas fa-bars" style="font-size: 1.25rem;"></span>
+                    </a>
+                  <div class="collapse" id="collapseExample">
+                    <div class="card card-body">
+                        <ul class="">
+                            <li><a class="nav-link active" href="./home.html">Home<span class="line-divide"></span></a></li>
+                            <li><a class="nav-link" href="./about_me.html"  title="Learn more about me">About me<span class="line-divide"></span></a></li>
+                            <li><a class="nav-link" href="./my_projects.html"  title="See my projects">Case Studies<span class="line-divide"></span></a></li>
+                            <li><a class="nav-link" href="./my_skills.html"  title="contact me">My Skills<span class="line-divide"></span></a></li>
+                            <li><a class="nav-link" href="./my_cv.html"  title="contact me">My Resume &#128203;<span class="line-divide"></span></a></li>
+                        </ul>
+                    </div>
+                  </div> -->
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="bg-vh bg-1">
+
+        </section>
+    </main>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel" style="z-index: 1100;">
+        <div class="circle-container">
+            <img src="./assets/images/curves.svg" alt="curves">
+            <div class="cricle-1"></div>
+            <div class="circle-2"></div>
+            <div class="circle-3"></div>
+        </div>
+        <div class="offcanvas-header" style="justify-content: end;">
+          <!-- <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menu</h5> -->
+          <button type="button" class="btn-close text-reset mt-3" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="menu-sidebar">
+                <li><a class="nav-link active" href="./home.html">Home<span class="line-divide"></span></a></li>
+                <li><a class="nav-link" href="./about_me.html"  title="Learn more about me">About me<span class="line-divide"></span></a></li>
+                <!-- <li><a class="nav-link" href="./my_projects.html"  title="See my projects">Case Studies<span class="line-divide"></span></a></li> -->
+                <!-- <li>
+                    <div class="dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownCaseStudies" data-bs-toggle="dropdown" aria-expanded="false">
+                              Case Studies<span class="line-divide"></span>
+                            </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownCaseStudies">
+                          <li><a class="dropdown-item" href="#">Building a Digital Banking System</a></li>
+                          <li><a class="dropdown-item" href="#">Creating a Learning Managment System</a></li>
+                          <li><a class="dropdown-item" href="#">Rebranding a Digital Branding Agency</a></li>
+                        </ul>
+                    </div>
+                </li> -->
+                <li>
+                    <a class="nav-link" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        Case Studies
+                        <!-- <span class="line-divide"></span> -->
+                      </a>
+                    <div class="collapse" id="collapseExample">
+                      <div class="card card-body">
+                        <ul class="cs-menu" aria-labelledby="dropdownCaseStudies">
+                            <li><a  href="#">Building a Digital Banking System</a></li>
+                            <li><a  href="#">Creating a Learning Managment System</a></li>
+                            <li><a  href="#">Rebranding a Digital Branding Agency</a></li>
+                          </ul>
+                      </div>
+                    </div>
+                </li>
+                <li><a class="nav-link" href="./my_skills.html"  title="My skills">My Skills<span class="line-divide"></span></a></li>
+                <li><a class="nav-link" href="./assets/images/CLARICE_PERU_UX_RESUME.pdf"  title="download my resume" download>Download My Resume &#128203;<span class="line-divide"></span></a></li>
+            </ul>
+        </div>
+        <div class="offcanvas-footer px-4 py-3">
+            <div class="sidebar-links flx flx-align-c flx-bt">
+                <a href="">
+                    <i class="fa fa-instagram"></i>
+                </a>
+                <a href="">
+                    <i class="fa fa-linkedin"></i>
+                </a>
+                <a href="">
+                    <i class="fas fa-globe"></i>
+                </a>
+                <a href="">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+      </div>
 </body>
 </html>
