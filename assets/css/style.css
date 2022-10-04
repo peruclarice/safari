@@ -1,3 +1,54 @@
+.flx {
+  display: flex;
+}
+
+.flx-wrap {
+  flex-wrap: wrap;
+}
+
+.flx-c {
+  justify-content: center;
+}
+
+.flx-bt {
+  justify-content: space-between;
+}
+
+.flx-ar {
+  justify-content: space-around;
+}
+
+.flx-even {
+  justify-content: space-evenly;
+}
+
+.flx-start {
+  align-items: start;
+}
+
+.flx-end {
+  align-items: end;
+}
+
+.flx-align-c {
+  align-items: center;
+}
+
+.flx-align-stretch {
+  align-items: stretch;
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 section {
   min-height: 100vh;
 }
@@ -118,4 +169,79 @@ nav.navbar li:hover {
   height: 60px;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.offcanvas {
+  overflow: hidden;
+}
+.offcanvas .offcanvas-body .menu-sidebar {
+  list-style: none;
+  padding: 0;
+}
+.offcanvas .offcanvas-body .menu-sidebar li {
+  padding: 1rem 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+.offcanvas .offcanvas-body .menu-sidebar li a .line-divide {
+  width: 0;
+  height: 4px;
+  background: #060606;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-radius: 50px;
+  transition: all 0.25s ease-out;
+}
+.offcanvas .offcanvas-body .menu-sidebar li a.nav-link.active .line-divide, .offcanvas .offcanvas-body .menu-sidebar li a.nav-link:hover .line-divide {
+  width: 40%;
+  left: 20px;
+}
+.offcanvas .offcanvas-body .menu-sidebar .dropdown-menu, .offcanvas .offcanvas-body .menu-sidebar .collapse .cs-menu {
+  list-style: none;
+  padding: 0;
+}
+.offcanvas .offcanvas-body .menu-sidebar .dropdown-menu li, .offcanvas .offcanvas-body .menu-sidebar .collapse .cs-menu li {
+  padding: 0.5rem;
+  margin-bottom: 0;
+  line-height: 1;
+}
+.offcanvas .offcanvas-body .menu-sidebar .dropdown-menu a, .offcanvas .offcanvas-body .menu-sidebar .collapse .cs-menu a {
+  font-size: 16px;
+  color: #060606;
+  text-decoration: none;
+}
+.offcanvas .offcanvas-body .menu-sidebar .collapse .card-body {
+  background: transparent;
+  padding: 0;
+  border: 0;
+}
+.offcanvas .offcanvas-body .menu-sidebar li:focus {
+  background: rgba(0, 0, 0, 0.15);
+}
+.offcanvas .circle-container img {
+  left: -120px;
+  top: 40%;
+  width: 800px;
+}
+.offcanvas .offcanvas-footer .sidebar-links {
+  width: 65%;
+}
+.offcanvas .offcanvas-footer .sidebar-links a {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #060606;
+  transition: all 0.5s linear;
+}
+.offcanvas .offcanvas-footer .sidebar-links a:hover {
+  background: #0707a4;
+  color: whitesmoke;
 }/*# sourceMappingURL=style.css.map */

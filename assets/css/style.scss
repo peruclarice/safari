@@ -1,3 +1,41 @@
+.flx {
+    display: flex;
+}
+.flx-wrap {
+    flex-wrap: wrap;
+}
+.flx-c {
+    justify-content: center;
+}
+.flx-bt {
+    justify-content: space-between;
+}
+.flx-ar{
+    justify-content: space-around;
+}
+.flx-even{
+    justify-content: space-evenly;
+}
+.flx-start {
+    align-items: start;
+}
+.flx-end {
+    align-items: end;
+}
+.flx-align-c{
+    align-items: center;
+}
+.flx-align-stretch{
+    align-items: stretch;
+}
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+img {
+    width: 100%;
+    object-fit: contain;
+}
 section {
     min-height: 100vh;
 }
@@ -129,5 +167,85 @@ nav.navbar {
     img {
         height: 60px;
         object-fit: contain;
+    }
+}
+.offcanvas {
+    overflow: hidden;
+    .offcanvas-body .menu-sidebar {
+        list-style: none;
+        padding: 0;
+        li {
+            padding: 1rem 1.5rem;
+            font-size: 1.5rem;
+            font-weight: 600;
+            position: relative;
+            margin-bottom: .5rem;
+            a .line-divide {
+                width: 0;
+                height: 4px;
+                background: #060606; 
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                border-radius: 50px; 
+                transition: all .25s ease-out;
+            }
+            a.nav-link.active, a.nav-link:hover {
+                .line-divide {
+                    width: 40%;
+                    left: 20px;
+                }
+            }
+        }
+        .dropdown-menu, .collapse .cs-menu {
+            list-style: none;
+            padding: 0;
+            li {
+                padding: .5rem;
+                margin-bottom: 0;
+                line-height: 1;
+            }
+            a {
+                font-size: 16px;
+                color: #060606;
+                text-decoration: none;
+            }
+        }
+        .collapse .card-body {
+            background: transparent;
+            padding: 0;
+            border: 0;
+        }
+        li:focus {
+            background: rgb(0,0,0,.15);
+        }
+    }
+    .circle-container {
+        img {
+            left: -120px;
+            top: 40%;
+            width: 800px;
+        }
+    }
+    .offcanvas-footer {
+        .sidebar-links {
+            width: 65%;
+            a {
+                width: 45px;
+                height: 45px;
+                border-radius: 50%;
+                background: whitesmoke;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-decoration: none;
+                color: #060606;
+                transition: all .5s linear;
+            }
+            a:hover {
+                background: #0707a4;
+                color: whitesmoke;
+            }
+        }
     }
 }
